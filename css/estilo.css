@@ -130,3 +130,11 @@ svg:hover{
         transform: scale(1,1);
 
 }
+
+#modoescuro{
+
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        
+}

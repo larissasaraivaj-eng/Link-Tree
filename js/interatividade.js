@@ -7,26 +7,38 @@ var titulo = $("h1")
 var subtitulo = $("#subtitulo")
 var icones = $("svg") 
 var fundo = $("body")
+var botao_modoescuro = $("#modoescuro")
+
+var modoescuro = false
 
 //PROCESSAMENTO
 
-titulo.click(()=>{
+botao_modoescuro.click(()=>{
 
-    botoes.css("background-color","black");
-
-    });
-
-titulo.dblclick(()=>{
+    if(modoescuro == false) {
 
 
-    fundo.html("<h1> Alterado pelo js </h1>");
+        botoes.css("background-color" , "white")
+        botoes.css("color" , "black")
 
-    });
+        modoescuro = true
+    
 
-subtitulo.click(()=>{
 
-    icones.css("fill","black")
+    }else{
 
-});
+        botoes.css("background-color" , "black")
+        botoes.css("color" , "white")
+
+        modoescuro = false
+    }
+
+
+
+})
+
+
+
+//SAIDA
 
 });
